@@ -1,0 +1,29 @@
+<% if params[:answer] == "生命線曲線へ" %>
+    <h1>生命線曲線について</h1>
+    <h2>生命線の曲線はどちらに近いですか</h2>
+    <a href="/tweets/result?answer=">Aに近い</a>
+    <a href="/tweets/result?answer=">Bに近い</a>
+<% elsif params[:answer] == "知能線上向きか下向きか" %>
+    <h1>知能線は上向きに近いですかそれとも下向きですか？</h1>
+    <h2>最終質問</h2>
+    <a href="/tweets/result?answer=">上向きに近い</a>
+    <a href="/tweets/result?answer=">下向きに近い</a>
+<% elsif params[:answer] == "感情線はどれに近いか" %>
+    <h1>感情線について</h1>
+    <h2>感情線はどれに近いですか？</h2>
+    <a href="/tweets/result?answer=お">二股に分かれている</a>
+    <a href="/tweets/result?answer=か">三股に分かれている</a>
+    <a href="/tweets/result?answer=お">鎖状になっている</a>
+    <a href="/tweets/result?answer=か">途中に切れ目がある</a>
+    <a href="/tweets/result?answer=か">切れ切れである</a>
+<% elsif params[:answer] == "F" %>
+    <h1>Fを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/tweets/result?answer=き">オススメ７結果を見る</a>
+    <a href="/tweets/result?answer=く">オススメ８結果を見る</a>
+<% elsif params[:answer] == "F" %>
+    <h1>Fを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/tweets/result?answer=き">オススメ７結果を見る</a>
+    <a href="/tweets/result?answer=く">オススメ８結果を見る</a>
+<% end %>

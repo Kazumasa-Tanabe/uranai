@@ -1,0 +1,125 @@
+<% if params[:answer] == "生命線" %>
+    <h1>生命線を選んだあなた</h1>
+    <h2>生命線はどれに近いですか？</h2>
+    <div class="select-images">
+        <a href="/tweets/result?answer=seimei1">
+            <%= image_tag "seimeiA.png", size: '250x200'%><br>
+            長くて太い生命線<br>
+        </a>
+        <a href="/tweets/result?answer=seimei2">
+            <%= image_tag "seimeiB.png", size: '250x200'%><br>
+            カーブの浅い生命線<br>
+        </a>
+        <a href="/tweets/result?answer=seimei3">
+            <%= image_tag "seimeiC.png", size: '250x200'%><br>
+            途中で切れている生命線<br>
+        </a>
+        <a href="/tweets/result?answer=seimei4">
+            <%= image_tag "seimeiD.png", size: '250x200'%><br>
+            短い生命線<br>
+        </a>
+        <a href="/tweets/result?answer=seimei5">
+            <%= image_tag "seimeiE.png", size: '250x200'%><br>
+            細い、薄い生命線<br>
+        </a>
+    </div>
+<% elsif params[:answer] == "知能線" %>
+    <h1>知能線を選んだあなた</h1>
+    <h2>知能線はどれに近いですか？</h2>
+    <div class="select-images">
+        <a href="/tweets/result?answer=tino1">
+            <%= image_tag "tinoA.png", size: '250x200'%><br>
+            まっすぐ長い知能線
+        </a>
+        <a href="/tweets/result?answer=tino2">
+            <%= image_tag "tinoB.png", size: '250x200'%><br>
+            下向きに長い知能線
+        </a>  
+        <a href="/tweets/result?answer=tino3">
+            <%= image_tag "tinoC.png", size: '250x200'%><br>
+            二股に分かれた知能線
+        </a><br>
+    </div>
+        <div class="select-images">
+        <a href="/tweets/result?answer=tino4">
+            <%= image_tag "tinoD.png", size: '250x200'%><br>
+            三股に分かれた知能線
+        </a>
+        <a href="/tweets/result?answer=tino5">
+            <%= image_tag "tinoE.png", size: '250x200'%><br>
+            切れている知能線
+        </a>
+        <a href="/tweets/result?answer=tino6">
+            <%= image_tag "tinoF.png", size: '250x200'%><br>
+            知能線がない
+        </a>
+    </div>
+<% elsif params[:answer] == "感情線" %>
+    <h1>感情線を選んだあなた</h1>
+    <h2>感情線はどれに近いですか？</h2>
+        <div class="select-images">
+        <a href="/tweets/result?answer=kanjo1">
+            <%= image_tag "kanjoA.png", size: '250x200'%><br>
+            まっすぐ長い感情線
+        </a>
+        <a href="/tweets/result?answer=kanjo2">
+            <%= image_tag "kanjoB.png", size: '250x200'%><br>
+            短い感情線
+        </a>  
+        <a href="/tweets/result?answer=kanjo3">
+            <%= image_tag "kanjoC.png", size: '250x200'%><br>
+            二股に分かれた感情線
+        </a><br>
+    </div>
+    <div class="select-images">
+        <a href="/tweets/result?answer=kanjo4">
+            <%= image_tag "kanjoD.png", size: '250x200'%><br>
+            三股に分かれた感情線
+        </a>
+        <a href="/tweets/result?answer=kanjo5">
+            <%= image_tag "kanjoE.png", size: '250x200'%><br>
+            鎖状になった感情線
+        </a>
+        <a href="/tweets/result?answer=kanjo6">
+            <%= image_tag "kanjoF.png", size: '250x200'%><br>
+            途中で切れた感情線
+        </a>
+    </div>
+<% elsif params[:answer] == "運命線" %>
+    <h1>運命線を選んだあなた</h1>
+    <h2>運命線はどれに近いですか？</h2>
+    <div class="select-images">
+        <a href="/tweets/result?answer=unme1">
+            <%= image_tag "unmeA.png", size: '250x200'%><br>
+            濃い運命線
+        </a>
+        <a href="/tweets/result?answer=unme2">
+            <%= image_tag "unmeB.png", size: '250x200'%><br>
+            薄い運命線
+        </a>  
+        <a href="/tweets/result?answer=unme3">
+            <%= image_tag "unmeC.png", size: '250x200'%><br>
+            長い運命線
+        </a>
+        <a href="/tweets/result?answer=unme4">
+            <%= image_tag "unmeD.png", size: '250x200'%><br>
+            短い運命線
+        </a><br>
+    </br>
+    </div>
+    <div class="select-images">
+        <a href="/tweets/result?answer=unme5">
+            <%= image_tag "unmeE.png", size: '250x200'%><br>
+            二股に分かれた運命線
+        </a>
+        <a href="/tweets/result?answer=unme6">
+            <%= image_tag "unmeF.png", size: '250x200'%><br>
+            途中で切れた運命線
+        </a>
+        <a href="/tweets/result?answer=unme7">
+            <%= image_tag "unmeG.png", size: '250x200'%><br>
+            運命線がない
+        </a>
+    </div>
+<% end %>
+
