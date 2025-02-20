@@ -121,5 +121,17 @@
             運命線がない
         </a>
     </div>
+<% if params[:answer] == "濃い" %>
+    <h1>濃いを選んだあなた</h1>
+    <h2>シワのような線が多いですか？</h2>
+    <a href="/tweets/question3?answer=C">はい</a>
+    <a href="/tweets/question3?answer=D">いいえ</a>
+<% elsif params[:answer] == "薄い" %>
+    <h1>薄いを選んだあなた</h1>
+    <h2>シワのような線が多いですか？</h2>
+    <a href="/tweets/question3?answer=E">はい</a>
+    <a href="/tweets/question3?answer=F">いいえ</a>
+<% end %>
+
 <% end %>
 

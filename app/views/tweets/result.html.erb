@@ -1,14 +1,19 @@
-<h3><div id="tweets"><h3>
+<div id="tweets">
   <% @tweets.each do |tweet| %>
    <% if params[:answer] == tweet.title %>
      <div class="result"> 
      <% if tweet.image.attached? %>
     <%= image_tag tweet.image, size: '250x200'%>
     <br>
+    <br>
 <% end %>  
    <%= tweet.body %>
-    </div>    
-        <%= link_to "手相一覧に戻る", tweet %>
+   <br>
+   <br>
+    </div>  
+    <div class="button">  
+        <%= link_to "手相一覧に戻る", question1_tweets_path%>
+    </div>
         </p>
     <% end %>
   <% end %>
