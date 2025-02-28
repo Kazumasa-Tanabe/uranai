@@ -8,6 +8,12 @@ Rails.application.routes.draw do
           get "question3"
           get "question4"
           get "result"
+          get "seimei"
+          get "tino"
+          get "kanjo"
+          get "unme"
+          get"sonota"
+          get"toko"
         end
       end
       root "tweets#question1" 

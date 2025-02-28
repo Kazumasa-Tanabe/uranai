@@ -1,17 +1,28 @@
-<h1>GeekTwitter</h1>
-<h3>新規Tweet</h3>
+<div class="tesotoko">
+<h1>手相投稿</h1>
+<h3>手相を投稿する</h3>
+<div class="tesotoko1">
+
 <%= form_for @tweet do |f| %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title, :size => 140 %>
+    <br>
         <%= f.label :body %>
     <%= f.text_field :body, :size => 140 %>
-
+<br>
   </div>
   <div class="field">
     <%= f.label :image %>
     <%= f.file_field :image %>
   </div>
-  <%= f.submit "Tweetする" %>
+  <div class="field1">
+  <%= f.submit "投稿する" %>
+  </div>
 <% end %>
-<%= link_to "Tweet一覧に戻る", tweets_path %>
+<br>
+</div>
+<div class="field2">
+<%= link_to "手相一覧に戻る", question1_tweets_path %> 
+</div>
+</div>

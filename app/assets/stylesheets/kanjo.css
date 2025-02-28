@@ -1,0 +1,25 @@
+.kanjosen{
+    padding: 1em 1em;
+    margin: 2pm auto;
+    margin-left:300px ;
+    color: #2c2c2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60%; 
+    font-family: "Shippori Mincho B1", serif
+}
+h1{
+    position: relative;
+    margin-top: 20px; 
+    align-items: center;
+    justify-content: center;
+    font-size:40px ;
+    display: flex;
+    color: red;
+    font-family: "Shippori Mincho B1", serif
+}
+body{
+    background:linear-gradient(to bottom, white 70%, #eedcb3 );    
+}

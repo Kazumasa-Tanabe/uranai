@@ -1,8 +1,10 @@
 <div id="tweets">
-  <% @tweets.each do |tweet| %>
-   <% if params[:answer] == tweet.title %>
-     <div class="result"> 
-     <% if tweet.image.attached? %>
+<div class="box3">
+<p><% @tweets.each do |tweet| %></p>
+<% if params[:answer] == tweet.title %>
+<div class="result">
+</div>
+<% if tweet.image.attached? %>
     <%= image_tag tweet.image, size: '250x200'%>
     <br>
     <br>
